@@ -1,5 +1,5 @@
 FROM golang:1.12-alpine as builder
-ENV SF_VERSION=0.4.2
+ENV SF_VERSION=0.5.0
 RUN \
     apk add git build-base && \
     wget http://github.com/tectiv3/standardfile/archive/v${SF_VERSION}.zip -O /tmp/zip && \
